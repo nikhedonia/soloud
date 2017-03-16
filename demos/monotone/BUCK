@@ -1,0 +1,14 @@
+cxx_binary(
+  name = 'monotone',
+  header_namespace = '',
+  headers = glob([
+    '*.h',
+  ]),
+  srcs = glob([
+    '*.cpp',
+  ]),
+  deps = [
+    '//:soloud',
+    '//demos/common:common',
+  ],
+)

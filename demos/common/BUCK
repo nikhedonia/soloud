@@ -1,0 +1,15 @@
+cxx_library(
+  name = 'common',
+  header_namespace = '',
+  exported_headers = subdir_glob([
+    ('glew', '**/*.h'),
+    ('imgui', '**/*.h'),
+    ('', '*.h'),
+  ]),
+  srcs = glob([
+    '**/*.cpp',
+  ]),
+  visibility = [
+    '//demos/...',
+  ],
+)

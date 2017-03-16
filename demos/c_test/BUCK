@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'c_test',
+  srcs = [
+    'main.c',
+  ],
+  deps = [
+    '//:soloud',
+  ],
+)

@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'simplest',
+  srcs = [
+    'main.cpp',
+  ],
+  deps = [
+    '//:soloud',
+  ],
+)

@@ -1,0 +1,13 @@
+cxx_binary(
+  name = 'null',
+  header_namespace = '',
+  headers = glob([
+    '*.h',
+  ]),
+  srcs = glob([
+    '*.cpp',
+  ]),
+  deps = [
+    '//:soloud',
+  ],
+)
